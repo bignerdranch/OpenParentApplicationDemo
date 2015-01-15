@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="OpenParentApplicationDemo_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.25" alignment="center" id="HBd-sq-oJd">
+                            <items>
+                                <button width="0.33300000000000002" alignment="left" title="cat" id="zsd-DU-l6N">
+                                    <connections>
+                                        <action selector="catPressed" destination="AgC-eL-Hgc" id="g8Z-I4-Oea"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33300000000000002" alignment="center" title="hat" id="z1N-BU-aSB">
+                                    <connections>
+                                        <action selector="hatPressed" destination="AgC-eL-Hgc" id="C2K-6q-CZs"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33300000000000002" alignment="right" title="Mat" id="JWe-UN-sLq">
+                                    <connections>
+                                        <action selector="matPressed" destination="AgC-eL-Hgc" id="hWc-1N-n3e"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <imageView width="1" height="0.75" alignment="center" verticalAlignment="bottom" contentMode="scaleAspectFit" id="kNy-XS-sjI"/>
+                    </items>
+                    <connections>
+                        <outlet property="imageView" destination="kNy-XS-sjI" id="4fw-5g-7kq"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="514" y="403"/>
+        </scene>
+    </scenes>
+</document>

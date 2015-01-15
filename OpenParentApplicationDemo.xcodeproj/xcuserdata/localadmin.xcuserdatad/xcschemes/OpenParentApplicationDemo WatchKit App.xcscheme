@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7BD645DE1A686AD600269E14"
+               BuildableName = "OpenParentApplicationDemo WatchKit App.app"
+               BlueprintName = "OpenParentApplicationDemo WatchKit App"
+               ReferencedContainer = "container:OpenParentApplicationDemo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "7BE2CD0F1A66B74F00CA5912"
                BuildableName = "OpenParentApplicationDemo.app"
                BlueprintName = "OpenParentApplicationDemo"
@@ -23,14 +37,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7BE2CD241A66B74F00CA5912"
-               BuildableName = "OpenParentApplicationDemoTests.xctest"
-               BlueprintName = "OpenParentApplicationDemoTests"
+               BlueprintIdentifier = "7BD645D41A686AD600269E14"
+               BuildableName = "OpenParentApplicationDemo WatchKit Extension.appex"
+               BlueprintName = "OpenParentApplicationDemo WatchKit Extension"
                ReferencedContainer = "container:OpenParentApplicationDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,23 +56,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7BE2CD241A66B74F00CA5912"
-               BuildableName = "OpenParentApplicationDemoTests.xctest"
-               BlueprintName = "OpenParentApplicationDemoTests"
-               ReferencedContainer = "container:OpenParentApplicationDemo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7BE2CD0F1A66B74F00CA5912"
-            BuildableName = "OpenParentApplicationDemo.app"
-            BlueprintName = "OpenParentApplicationDemo"
+            BlueprintIdentifier = "7BD645DE1A686AD600269E14"
+            BuildableName = "OpenParentApplicationDemo WatchKit App.app"
+            BlueprintName = "OpenParentApplicationDemo WatchKit App"
             ReferencedContainer = "container:OpenParentApplicationDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -72,16 +76,27 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/OpenParentApplicationDemo">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7BE2CD0F1A66B74F00CA5912"
-            BuildableName = "OpenParentApplicationDemo.app"
-            BlueprintName = "OpenParentApplicationDemo"
+            BlueprintIdentifier = "7BD645DE1A686AD600269E14"
+            BuildableName = "OpenParentApplicationDemo WatchKit App.app"
+            BlueprintName = "OpenParentApplicationDemo WatchKit App"
             ReferencedContainer = "container:OpenParentApplicationDemo.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7BD645DE1A686AD600269E14"
+            BuildableName = "OpenParentApplicationDemo WatchKit App.app"
+            BlueprintName = "OpenParentApplicationDemo WatchKit App"
+            ReferencedContainer = "container:OpenParentApplicationDemo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -91,16 +106,27 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/OpenParentApplicationDemo">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7BE2CD0F1A66B74F00CA5912"
-            BuildableName = "OpenParentApplicationDemo.app"
-            BlueprintName = "OpenParentApplicationDemo"
+            BlueprintIdentifier = "7BD645DE1A686AD600269E14"
+            BuildableName = "OpenParentApplicationDemo WatchKit App.app"
+            BlueprintName = "OpenParentApplicationDemo WatchKit App"
             ReferencedContainer = "container:OpenParentApplicationDemo.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7BD645DE1A686AD600269E14"
+            BuildableName = "OpenParentApplicationDemo WatchKit App.app"
+            BlueprintName = "OpenParentApplicationDemo WatchKit App"
+            ReferencedContainer = "container:OpenParentApplicationDemo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

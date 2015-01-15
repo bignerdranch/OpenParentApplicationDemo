@@ -40,7 +40,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func application(application: UIApplication!,
+        handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]!,
+        reply: (([NSObject : AnyObject]!) -> Void)!) {
+            getWordThatRhymesWithSat(userInfo, reply)
+    }
+    
+    func getWordThatRhymesWithSat(userInfo: [NSObject : AnyObject]!, reply: (([NSObject : AnyObject]!) ->Void)!) {
 
+        if let word = userInfo["Desired Word"] as? String {
+            var urlString: String?
+            if word == "cat" {
+                urlString = "http://www.bignerdranch.com/img/blog/2015/01/mainPaletteColors.png"
+            } else if word == "hat" {
+                urlString = "http://www.bignerdranch.com/img/blog/2014/08/historic-logo.png"
+            } else {
+                urlString = "http://www.bignerdranch.com/img/nerds/hobby-shots/mathew-jackson.jpg"
+            }
+            
+            let config = NSURLSessionConfiguration.defaultSessionConfiguration()
+            let session = NSURLSession(configuration: config, delegate: nil, delegateQueue: nil)
+            let url = NSURL(string: urlString!)!
+            let request = NSURLRequest(URL: url)
+            let dataTask = session.dataTaskWithRequest(request) {
+                (data, response, error) -> Void in
+                
+                if data != nil {
+                    let returnDictionary = ["Returned NSData":data];
+                    reply(returnDictionary)
+                }
+            }
+            dataTask.resume()
+        }
+    }
 
 }
 

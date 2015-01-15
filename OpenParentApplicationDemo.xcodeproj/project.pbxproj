@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BD645DA1A686AD600269E14 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD645D91A686AD600269E14 /* InterfaceController.swift */; };
+		7BD645DC1A686AD600269E14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BD645DB1A686AD600269E14 /* Images.xcassets */; };
+		7BD645E01A686AD600269E14 /* OpenParentApplicationDemo WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 7BD645DF1A686AD600269E14 /* OpenParentApplicationDemo WatchKit App.app */; };
+		7BD645E81A686AD600269E14 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD645E61A686AD600269E14 /* Interface.storyboard */; };
+		7BD645EA1A686AD600269E14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BD645E91A686AD600269E14 /* Images.xcassets */; };
+		7BD645ED1A686AD600269E14 /* OpenParentApplicationDemo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7BD645D51A686AD600269E14 /* OpenParentApplicationDemo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7BE2CD161A66B74F00CA5912 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE2CD151A66B74F00CA5912 /* AppDelegate.swift */; };
 		7BE2CD181A66B74F00CA5912 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE2CD171A66B74F00CA5912 /* ViewController.swift */; };
 		7BE2CD1B1A66B74F00CA5912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE2CD191A66B74F00CA5912 /* Main.storyboard */; };
@@ -16,6 +22,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7BD645E11A686AD600269E14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BE2CD081A66B74F00CA5912 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BD645DE1A686AD600269E14;
+			remoteInfo = "OpenParentApplicationDemo WatchKit App";
+		};
+		7BD645EB1A686AD600269E14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BE2CD081A66B74F00CA5912 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BD645D41A686AD600269E14;
+			remoteInfo = "OpenParentApplicationDemo WatchKit Extension";
+		};
 		7BE2CD261A66B74F00CA5912 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7BE2CD081A66B74F00CA5912 /* Project object */;
@@ -25,7 +45,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7BD645F41A686AD600269E14 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7BD645ED1A686AD600269E14 /* OpenParentApplicationDemo WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7BD645D51A686AD600269E14 /* OpenParentApplicationDemo WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OpenParentApplicationDemo WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD645D81A686AD600269E14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BD645D91A686AD600269E14 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		7BD645DB1A686AD600269E14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7BD645DF1A686AD600269E14 /* OpenParentApplicationDemo WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenParentApplicationDemo WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD645E51A686AD600269E14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BD645E71A686AD600269E14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7BD645E91A686AD600269E14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7BE2CD101A66B74F00CA5912 /* OpenParentApplicationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenParentApplicationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE2CD141A66B74F00CA5912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BE2CD151A66B74F00CA5912 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +81,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7BD645D21A686AD600269E14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BE2CD0D1A66B74F00CA5912 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,11 +105,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7BD645D61A686AD600269E14 /* OpenParentApplicationDemo WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7BD645D91A686AD600269E14 /* InterfaceController.swift */,
+				7BD645DB1A686AD600269E14 /* Images.xcassets */,
+				7BD645D71A686AD600269E14 /* Supporting Files */,
+			);
+			path = "OpenParentApplicationDemo WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		7BD645D71A686AD600269E14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BD645D81A686AD600269E14 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7BD645E31A686AD600269E14 /* OpenParentApplicationDemo WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				7BD645E61A686AD600269E14 /* Interface.storyboard */,
+				7BD645E91A686AD600269E14 /* Images.xcassets */,
+				7BD645E41A686AD600269E14 /* Supporting Files */,
+			);
+			path = "OpenParentApplicationDemo WatchKit App";
+			sourceTree = "<group>";
+		};
+		7BD645E41A686AD600269E14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BD645E51A686AD600269E14 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		7BE2CD071A66B74F00CA5912 = {
 			isa = PBXGroup;
 			children = (
 				7BE2CD121A66B74F00CA5912 /* OpenParentApplicationDemo */,
 				7BE2CD281A66B74F00CA5912 /* OpenParentApplicationDemoTests */,
+				7BD645D61A686AD600269E14 /* OpenParentApplicationDemo WatchKit Extension */,
+				7BD645E31A686AD600269E14 /* OpenParentApplicationDemo WatchKit App */,
 				7BE2CD111A66B74F00CA5912 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +157,8 @@
 			children = (
 				7BE2CD101A66B74F00CA5912 /* OpenParentApplicationDemo.app */,
 				7BE2CD251A66B74F00CA5912 /* OpenParentApplicationDemoTests.xctest */,
+				7BD645D51A686AD600269E14 /* OpenParentApplicationDemo WatchKit Extension.appex */,
+				7BD645DF1A686AD600269E14 /* OpenParentApplicationDemo WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +204,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7BD645D41A686AD600269E14 /* OpenParentApplicationDemo WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BD645F31A686AD600269E14 /* Build configuration list for PBXNativeTarget "OpenParentApplicationDemo WatchKit Extension" */;
+			buildPhases = (
+				7BD645D11A686AD600269E14 /* Sources */,
+				7BD645D21A686AD600269E14 /* Frameworks */,
+				7BD645D31A686AD600269E14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BD645E21A686AD600269E14 /* PBXTargetDependency */,
+			);
+			name = "OpenParentApplicationDemo WatchKit Extension";
+			productName = "OpenParentApplicationDemo WatchKit Extension";
+			productReference = 7BD645D51A686AD600269E14 /* OpenParentApplicationDemo WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		7BD645DE1A686AD600269E14 /* OpenParentApplicationDemo WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BD645F21A686AD600269E14 /* Build configuration list for PBXNativeTarget "OpenParentApplicationDemo WatchKit App" */;
+			buildPhases = (
+				7BD645DD1A686AD600269E14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenParentApplicationDemo WatchKit App";
+			productName = "OpenParentApplicationDemo WatchKit App";
+			productReference = 7BD645DF1A686AD600269E14 /* OpenParentApplicationDemo WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 		7BE2CD0F1A66B74F00CA5912 /* OpenParentApplicationDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BE2CD2F1A66B74F00CA5912 /* Build configuration list for PBXNativeTarget "OpenParentApplicationDemo" */;
@@ -122,10 +244,12 @@
 				7BE2CD0C1A66B74F00CA5912 /* Sources */,
 				7BE2CD0D1A66B74F00CA5912 /* Frameworks */,
 				7BE2CD0E1A66B74F00CA5912 /* Resources */,
+				7BD645F41A686AD600269E14 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7BD645EC1A686AD600269E14 /* PBXTargetDependency */,
 			);
 			name = OpenParentApplicationDemo;
 			productName = OpenParentApplicationDemo;
@@ -159,6 +283,12 @@
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Big Nerd Ranch";
 				TargetAttributes = {
+					7BD645D41A686AD600269E14 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					7BD645DE1A686AD600269E14 = {
+						CreatedOnToolsVersion = 6.2;
+					};
 					7BE2CD0F1A66B74F00CA5912 = {
 						CreatedOnToolsVersion = 6.2;
 					};
@@ -183,11 +313,31 @@
 			targets = (
 				7BE2CD0F1A66B74F00CA5912 /* OpenParentApplicationDemo */,
 				7BE2CD241A66B74F00CA5912 /* OpenParentApplicationDemoTests */,
+				7BD645D41A686AD600269E14 /* OpenParentApplicationDemo WatchKit Extension */,
+				7BD645DE1A686AD600269E14 /* OpenParentApplicationDemo WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7BD645D31A686AD600269E14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BD645E01A686AD600269E14 /* OpenParentApplicationDemo WatchKit App.app in Resources */,
+				7BD645DC1A686AD600269E14 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BD645DD1A686AD600269E14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BD645E81A686AD600269E14 /* Interface.storyboard in Resources */,
+				7BD645EA1A686AD600269E14 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BE2CD0E1A66B74F00CA5912 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,6 +358,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7BD645D11A686AD600269E14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BD645DA1A686AD600269E14 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BE2CD0C1A66B74F00CA5912 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,6 +386,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7BD645E21A686AD600269E14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BD645DE1A686AD600269E14 /* OpenParentApplicationDemo WatchKit App */;
+			targetProxy = 7BD645E11A686AD600269E14 /* PBXContainerItemProxy */;
+		};
+		7BD645EC1A686AD600269E14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BD645D41A686AD600269E14 /* OpenParentApplicationDemo WatchKit Extension */;
+			targetProxy = 7BD645EB1A686AD600269E14 /* PBXContainerItemProxy */;
+		};
 		7BE2CD271A66B74F00CA5912 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7BE2CD0F1A66B74F00CA5912 /* OpenParentApplicationDemo */;
@@ -236,6 +404,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		7BD645E61A686AD600269E14 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BD645E71A686AD600269E14 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		7BE2CD191A66B74F00CA5912 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -255,6 +431,62 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7BD645EE1A686AD600269E14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OpenParentApplicationDemo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7BD645EF1A686AD600269E14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "OpenParentApplicationDemo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7BD645F01A686AD600269E14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = OpenParentApplicationDemo_WatchKit_Extension;
+				INFOPLIST_FILE = "OpenParentApplicationDemo WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		7BD645F11A686AD600269E14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = OpenParentApplicationDemo_WatchKit_Extension;
+				INFOPLIST_FILE = "OpenParentApplicationDemo WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 		7BE2CD2D1A66B74F00CA5912 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -338,6 +570,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = OpenParentApplicationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +581,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = OpenParentApplicationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -391,6 +625,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7BD645F21A686AD600269E14 /* Build configuration list for PBXNativeTarget "OpenParentApplicationDemo WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BD645F01A686AD600269E14 /* Debug */,
+				7BD645F11A686AD600269E14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7BD645F31A686AD600269E14 /* Build configuration list for PBXNativeTarget "OpenParentApplicationDemo WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BD645EE1A686AD600269E14 /* Debug */,
+				7BD645EF1A686AD600269E14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7BE2CD0B1A66B74F00CA5912 /* Build configuration list for PBXProject "OpenParentApplicationDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -407,6 +657,7 @@
 				7BE2CD311A66B74F00CA5912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BE2CD321A66B74F00CA5912 /* Build configuration list for PBXNativeTarget "OpenParentApplicationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +666,7 @@
 				7BE2CD341A66B74F00CA5912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
