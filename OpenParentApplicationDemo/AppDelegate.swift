@@ -51,12 +51,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         if let word = userInfo["Desired Word"] as? String {
             var urlString: String?
-            if word == "cat" {
-                urlString = "http://www.bignerdranch.com/img/blog/2015/01/mainPaletteColors.png"
-            } else if word == "hat" {
-                urlString = "http://www.bignerdranch.com/img/blog/2014/08/historic-logo.png"
-            } else {
-                urlString = "http://www.bignerdranch.com/img/nerds/hobby-shots/mathew-jackson.jpg"
+            
+            switch word {
+                case "cat":
+                    urlString = "http://www.bignerdranch.com/img/blog/2015/01/mainPaletteColors.png"
+                case "hat":
+                    urlString = "http://www.bignerdranch.com/img/blog/2014/08/historic-logo.png"
+                case "Mat":
+                    urlString = "http://www.bignerdranch.com/img/nerds/hobby-shots/mathew-jackson.jpg"
+                default:
+                    urlString = ""
             }
             
             let config = NSURLSessionConfiguration.defaultSessionConfiguration()
