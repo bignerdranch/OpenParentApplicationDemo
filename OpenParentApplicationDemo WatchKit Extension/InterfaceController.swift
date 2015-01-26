@@ -45,15 +45,16 @@ class InterfaceController: WKInterfaceController {
         let dictionary = ["Desired Word":image]
         WKInterfaceController.openParentApplication(dictionary) {
             (replyInfo, error) -> Void in
-            if error == nil && replyInfo != nil {
-                if let data = replyInfo["Returned NSData"] as? NSData {
-                    let image = UIImage(data: data)
-                    self.imageView.setImage(image)
-                }
+            switch (replyInfo?["Returned NSData"] as? NSData, error) {
+            case let (data, nil) where data != nil:
+                let image = UIImage(data: data!)
+                self.imageView.setImage(image)
+            case let (_, .Some(error)):
+                println("got an error: \(error)") // take corrective action here
+            default:
+                println("no error but didn't get data either...") // unexpected situation
             }
         }
-        
-
     }
 
 }
