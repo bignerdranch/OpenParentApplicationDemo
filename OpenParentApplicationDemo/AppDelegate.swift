@@ -56,7 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 case "cat":
                     urlString = "http://www.bignerdranch.com/img/blog/2015/01/mainPaletteColors.png"
                 case "hat":
-                    urlString = "http://www.bignerdranch.com/img/blog/2014/08/historic-logo.png"
+                    urlString = "https://raw.githubusercontent.com/bignerdranch/bignerdranch.com/sf/open-parent-application/img/blog/2015/01/bnrNewHatLogo.png?token=AFESwmlXBNWWGvgD6aDnKhJmLhsSEp5Oks5Uz7DGwA%3D%3D"
                 case "Mat":
                     urlString = "http://www.bignerdranch.com/img/nerds/hobby-shots/mathew-jackson.jpg"
                 default:
